@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Galería de Fotos - Refugio el Amparo de Paine</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#facc15", surface: "#0a0a0a" },
+          fontFamily: {
+            "display-md": ["Outfit", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-white font-body-md antialiased p-6 md:p-12">
+  
+  <!-- Header / Navigation -->
+  <div class="max-w-[1600px] mx-auto flex items-center justify-between mb-12">
+    <a href="index.html" class="inline-flex items-center gap-2 text-white hover:text-primary transition-colors text-lg font-bold tracking-widest uppercase">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Volver al Inicio
+    </a>
+    <img src="img/logo.png" alt="Logo" class="h-12 w-auto">
+  </div>
+
+  <h1 class="text-4xl md:text-5xl font-display-md tracking-widest uppercase text-center mb-12">Nuestras Instalaciones</h1>
+
+  <!-- Gallery Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[1600px] mx-auto">
+    <img src="img/casa.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Casa">
+    <img src="img/piscina.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Piscina">
+    <img src="img/tinaja.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Tinaja">
+    <img src="img/mascotas.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Mascotas">
+    <img src="img/casa2.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Casa 2">
+    <img src="img/piscina2.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Piscina 2">
+    <img src="img/tinaja2.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Tinaja 2">
+    <img src="img/mascotas2.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Mascotas 2">
+    
+    <!-- Nuevas fotos -->
+    <img src="img/galeria1.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Galeria 1">
+    <img src="img/galeria2.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Galeria 2">
+    <img src="img/galeria3.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Galeria 3">
+    <img src="img/galeria4.jpg" class="w-full aspect-square object-cover rounded-xl shadow-lg hover:scale-105 hover:shadow-primary/20 transition-all duration-300" loading="lazy" alt="Galeria 4">
+  </div>
+
+</body>
+</html>

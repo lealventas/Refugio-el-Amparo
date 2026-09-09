@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <title>Refugio el Amparo de Paine</title>
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <style>
+    @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}
+    ::-webkit-scrollbar{display:none;}
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#0a0a0a",
+          "on-surface": "#ffffff",
+          "surface-container-lowest": "#000000",
+          "surface-container-low": "#121212",
+          "surface-container": "#171717",
+          "surface-container-high": "#262626",
+          "surface-container-highest": "#404040",
+          "surface-variant": "#262626",
+          "on-surface-variant": "#a3a3a3",
+          "outline": "#525252",
+          "outline-variant": "#404040",
+          "primary": "#facc15", // Premium Gold
+          "on-primary": "#000000",
+          "primary-container": "#854d0e",
+          "on-primary-container": "#fef08a",
+          "secondary": "#ffffff", // Pure white for contrasts
+          "on-secondary": "#000000",
+          "secondary-container": "#262626",
+          "on-secondary-container": "#ffffff",
+          "error": "#ef4444",
+          "on-error": "#ffffff",
+          "error-container": "#7f1d1d",
+          "on-error-container": "#fecaca",
+          "whatsapp": "#25D366" // Keep whatsapp green isolated
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.5rem",
+          "max-width-content": "1280px",
+          "space-4xl": "6rem",
+          "space-2xs": "0.25rem",
+          "space-sm": "0.75rem",
+          "margin-tablet": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "space-3xl": "4rem",
+          "space-lg": "1.5rem",
+          "space-2xl": "3rem",
+          "gutter-desktop": "1.5rem",
+          "space-xl": "2rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "margin-desktop": "4rem"
+        },
+        "fontFamily": {
+          "display-md-mobile": ["Outfit", "sans-serif"],
+          "headline-md": ["Outfit", "sans-serif"],
+          "display-lg": ["Outfit", "sans-serif"],
+          "headline-lg": ["Outfit", "sans-serif"],
+          "body-sm": ["Inter", "sans-serif"],
+          "body-md": ["Inter", "sans-serif"],
+          "headline-sm": ["Outfit", "sans-serif"],
+          "label-md": ["Inter", "sans-serif"],
+          "display-md": ["Outfit", "sans-serif"],
+          "label-lg": ["Inter", "sans-serif"],
+          "label-sm": ["Inter", "sans-serif"],
+          "body-lg": ["Inter", "sans-serif"],
+          "display-lg-mobile": ["Outfit", "sans-serif"]
+        },
+        "fontSize": {
+          "display-md-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+          "headline-md": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "500"}],
+          "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-sm": ["13px", {"lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400"}],
+          "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "display-md": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+          "display-lg-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "600"}]
+        }
+      }
+    }
+  }</script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+  
+  <header id="main-header" class="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 bg-transparent py-2">
+    <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-sm">
+        <a class="flex items-center gap-space-xs hover:scale-105 transition-transform" href="#">
+          <img src="img/logo.png" alt="Refugio el Amparo Logo" class="h-12 w-auto object-contain drop-shadow-md">
+        </a>
+      </div>
+      <nav class="hidden xl:flex items-center gap-8">
+        <a class="relative text-white font-label-lg tracking-wide hover:text-primary transition-colors group" href="#instalaciones">
+          La Casa
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a class="relative text-white font-label-lg tracking-wide hover:text-primary transition-colors group" href="#instalaciones">
+          Piscina & Tinaja
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a class="relative text-white font-label-lg tracking-wide hover:text-primary transition-colors group" href="#ubicacion">
+          Ubicación
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+      <div class="flex items-center gap-6">
+        <!-- IG Icon -->
+        <a class="hidden md:flex text-white hover:text-primary transition-colors hover:scale-110 transform" href="https://www.instagram.com/refugio_el_amparo/" target="_blank" title="Síguenos en Instagram">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a class="inline-flex items-center justify-center px-8 py-3 bg-whatsapp text-white font-label-lg tracking-widest uppercase rounded-full shadow-lg shadow-whatsapp/30 hover:bg-green-400 hover:shadow-whatsapp/50 hover:-translate-y-0.5 transition-all" href="https://wa.me/56968713280" target="_blank">
+          Reservar Ahora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full bg-surface min-h-screen">
+    <div class="flex flex-col w-full">
+      
+      <!-- Hero Section -->
+      <section class="relative w-full h-screen min-h-[600px] overflow-hidden bg-black flex flex-col justify-center items-center">
+        <div class="absolute inset-0 z-0">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-70">
+            <source src="img/gif.mp4" type="video/mp4">
+          </video>
+          <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center flex flex-col items-center px-4">
+          <h1 class="font-display-lg text-4xl md:text-6xl text-white font-light tracking-widest uppercase mb-4 drop-shadow-lg">
+            Refugio el Amparo
+          </h1>
+          <p class="font-body-lg text-lg text-gray-200 font-light mb-12 tracking-wide drop-shadow">
+            Piscina & Tinaja Caliente
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#como-reservar" class="inline-flex items-center justify-center px-12 py-4 bg-white text-black font-label-lg text-label-lg rounded-full shadow-xl hover:bg-gray-200 hover:scale-105 transition-all tracking-widest uppercase font-bold">
+              Reserva
+            </a>
+            <a href="fotos.html" class="inline-flex items-center justify-center px-12 py-4 bg-transparent border-2 border-white text-white font-label-lg text-label-lg rounded-full hover:bg-white/10 hover:scale-105 transition-all tracking-widest uppercase font-bold">
+              Ver Fotos
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nosotros Section -->
+      <section class="w-full py-space-3xl bg-surface" id="nosotros">
+        <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop text-center">
+          <span class="font-label-sm text-label-sm tracking-widest uppercase text-primary font-bold mb-4 block">Sobre Nosotros</span>
+          <h2 class="font-display-md text-3xl md:text-5xl text-white mb-8">Un rincón pensado para tu desconexión</h2>
+          <p class="font-body-lg text-gray-300 leading-relaxed text-lg md:text-xl">
+            Refugio el Amparo nació como un proyecto familiar con un único propósito: ofrecer un espacio de paz absoluta cerca de la ciudad. 
+            Nos enorgullece recibir a nuestros huéspedes con la misma calidez con la que recibimos a nuestra familia. 
+            Aquí encontrarás un escape rodeado de naturaleza, donde el silencio, la comodidad y los pequeños detalles 
+            se unen para crear recuerdos inolvidables.
+          </p>
+        </div>
+      </section>
+
+      <!-- Interactive Pro Gallery Section -->
+      <section class="w-full bg-black border-t border-b border-surface-container-high" id="instalaciones">
+        <div class="grid grid-cols-1 md:grid-cols-4 w-full">
+          
+          <!-- Item 1: La Casa -->
+          <div class="group flex flex-col cursor-pointer bg-black">
+            <!-- Images Container -->
+            <div class="relative w-full aspect-square md:aspect-[4/5] overflow-hidden">
+              <img src="img/casa.jpg" alt="Casa" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0">
+              <img src="img/casa2.jpg" alt="Casa Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 scale-105 group-hover:scale-100 transition-transform">
+              <!-- Overlay to make text/icon readable on hover if needed, but the design is icon below -->
+            </div>
+            <!-- Icon & Text -->
+            <div class="flex flex-col items-center justify-center py-10 px-4 bg-black text-white group-hover:bg-primary/20 group-hover:text-primary transition-colors duration-500 border-r border-surface-container-high">
+              <span class="material-symbols-outlined text-[64px] mb-4 font-light">cottage</span>
+              <span class="font-display-md text-xl tracking-widest uppercase">Cabaña</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Piscina -->
+          <div class="group flex flex-col cursor-pointer bg-black">
+            <div class="relative w-full aspect-square md:aspect-[4/5] overflow-hidden">
+              <img src="img/piscina.jpg" alt="Piscina" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0">
+              <img src="img/piscina2.jpg" alt="Piscina Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 scale-105 group-hover:scale-100 transition-transform">
+            </div>
+            <div class="flex flex-col items-center justify-center py-10 px-4 bg-black text-white group-hover:bg-primary/20 group-hover:text-primary transition-colors duration-500 border-r border-surface-container-high">
+              <span class="material-symbols-outlined text-[64px] mb-4 font-light">pool</span>
+              <span class="font-display-md text-xl tracking-widest uppercase">Piscina</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Tinaja -->
+          <div class="group flex flex-col cursor-pointer bg-black">
+            <div class="relative w-full aspect-square md:aspect-[4/5] overflow-hidden">
+              <img src="img/tinaja.jpg" alt="Tinaja" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0">
+              <img src="img/tinaja2.jpg" alt="Tinaja Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 scale-105 group-hover:scale-100 transition-transform">
+            </div>
+            <div class="flex flex-col items-center justify-center py-10 px-4 bg-black text-white group-hover:bg-primary/20 group-hover:text-primary transition-colors duration-500 border-r border-surface-container-high">
+              <span class="material-symbols-outlined text-[64px] mb-4 font-light">hot_tub</span>
+              <span class="font-display-md text-xl tracking-widest uppercase">Tinaja</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Exteriores -->
+          <div class="group flex flex-col cursor-pointer bg-black">
+            <div class="relative w-full aspect-square md:aspect-[4/5] overflow-hidden">
+              <img src="img/mascotas.jpg" alt="Mascotas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0">
+              <img src="img/mascotas2.jpg" alt="Mascotas Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100 scale-105 group-hover:scale-100 transition-transform">
+            </div>
+            <div class="flex flex-col items-center justify-center py-10 px-4 bg-black text-white group-hover:bg-primary/20 group-hover:text-primary transition-colors duration-500">
+              <span class="material-symbols-outlined text-[64px] mb-4 font-light">local_parking</span>
+              <span class="font-display-md text-xl tracking-widest uppercase text-center">Parking & Pets</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section class="w-full py-20 bg-surface-container-low border-b border-surface-container-high">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop text-center">
+          <span class="font-label-sm text-label-sm tracking-widest uppercase text-primary font-bold mb-4 block">Comodidades</span>
+          <h2 class="font-display-md text-3xl md:text-5xl text-white mb-12">Servicios Incluidos</h2>
+          
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-300">
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">wifi</span>
+              <span class="font-bold">Wi-Fi Gratis</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">outdoor_grill</span>
+              <span class="font-bold">Parrilla / Quincho</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">tv</span>
+              <span class="font-bold">Smart TV</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">kitchen</span>
+              <span class="font-bold">Cocina Equipada</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">bed</span>
+              <span class="font-bold">Ropa de Cama</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">local_laundry_service</span>
+              <span class="font-bold">Toallas</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">pool</span>
+              <span class="font-bold">Piscina Privada</span>
+            </div>
+            <div class="flex flex-col items-center justify-center p-6 bg-black rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+              <span class="material-symbols-outlined text-4xl text-primary mb-3">hot_tub</span>
+              <span class="font-bold">Tinaja Exclusiva</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Steps Section -->
+      <section class="w-full py-space-3xl bg-surface" id="como-reservar">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop text-center">
+          <span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-bold">Sin Comisiones</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs mb-space-xl">¿Cómo Reservar tu Estadía?</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg max-w-5xl mx-auto relative">
+            <div class="hidden md:block absolute top-1/2 left-1/6 right-1/6 h-0.5 bg-outline-variant/30 -z-10 transform -translate-y-1/2"></div>
+            
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/30 flex flex-col items-center relative">
+              <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-4">1</div>
+              <h3 class="font-headline-sm text-primary mb-2">Escríbenos</h3>
+              <p class="font-body-sm text-on-surface-variant">Haz clic en el botón de WhatsApp y cuéntanos las fechas que tienes en mente y cuántas personas son.</p>
+            </div>
+            
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/30 flex flex-col items-center relative">
+              <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-4">2</div>
+              <h3 class="font-headline-sm text-primary mb-2">Cotiza</h3>
+              <p class="font-body-sm text-on-surface-variant">Te confirmaremos la disponibilidad al instante y te enviaremos el valor total exacto, sin costos ocultos.</p>
+            </div>
+            
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-outline-variant/30 flex flex-col items-center relative">
+              <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-4">3</div>
+              <h3 class="font-headline-sm text-primary mb-2">Reserva</h3>
+              <p class="font-body-sm text-on-surface-variant">Asegura tu fecha con una transferencia del 50%. El resto se paga el día de tu llegada. ¡Así de fácil!</p>
+            </div>
+          </div>
+          
+          <div class="mt-space-2xl">
+            <a href="https://wa.me/56968713280" target="_blank" class="inline-flex items-center justify-center px-space-xl py-space-sm bg-[#25D366] text-white hover:bg-green-600 transition-all font-label-lg text-label-lg rounded-lg shadow-lg gap-2 font-bold transform hover:-translate-y-1">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Iniciar Reserva por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="w-full py-space-3xl bg-surface-container-low/50">
+        <div class="max-w-[800px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+          <div class="text-center mb-space-xl">
+            <h2 class="font-headline-lg text-headline-lg text-primary">Preguntas Frecuentes</h2>
+          </div>
+          
+          <div class="flex flex-col gap-space-sm">
+            <div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm">
+              <h4 class="font-label-lg font-bold text-primary mb-1">¿Cuáles son los horarios de Check-in y Check-out?</h4>
+              <p class="font-body-sm text-on-surface-variant">Generalmente el ingreso es a partir de las 15:00 hrs y la salida hasta las 12:00 hrs, pero podemos ser flexibles dependiendo de la disponibilidad. ¡Consúltanos!</p>
+            </div>
+            
+            <div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm">
+              <h4 class="font-label-lg font-bold text-primary mb-1">¿Debo llevar mis propias sábanas o toallas?</h4>
+              <p class="font-body-sm text-on-surface-variant">No, la casa está full equipada. Entregamos ropa de cama limpia para todos los huéspedes y toallas para el baño.</p>
+            </div>
+            
+            <div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm">
+              <h4 class="font-label-lg font-bold text-primary mb-1">¿Se puede usar la tinaja de noche?</h4>
+              <p class="font-body-sm text-on-surface-variant">¡Sí! Es el mejor momento. La tinaja es tuya durante toda la estadía.</p>
+            </div>
+            
+            <div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm">
+              <h4 class="font-label-lg font-bold text-primary mb-1">¿Aceptan mascotas?</h4>
+              <p class="font-body-sm text-on-surface-variant">¡Por supuesto! Somos Pet Friendly. Solo pedimos cuidar los espacios interiores y exteriores para mantener el lugar impecable para los siguientes visitantes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="w-full py-space-3xl bg-surface-container-low border-b border-surface-container-high" id="reviews">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop text-center">
+          <span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-bold">Lo que más gustó a otros clientes</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary mt-space-2xs mb-space-xl">Recomendados por nuestros huéspedes</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
+            
+            <!-- Review 1 -->
+            <div class="bg-black rounded-xl p-8 shadow-lg border border-surface-container-high flex flex-col justify-between">
+              <div>
+                <div class="flex text-secondary mb-4">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-gray-300 italic mb-6">
+                  "Me gusto la ubicación, las instalaciones, me gusto que esté rodeado de naturaleza tranquilidad y silencio, los anfitriones don Julio y su señora muy amables y dispuestos siempre a cualquier cosa..."
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">R</div>
+                <div>
+                  <h4 class="font-bold text-white leading-tight">Roberto</h4>
+                  <p class="text-xs text-gray-500">Chile • Enero 2026 • Con niños</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-black rounded-xl p-8 shadow-lg border border-surface-container-high flex flex-col justify-between">
+              <div>
+                <div class="flex text-secondary mb-4">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-gray-300 italic mb-6">
+                  "Muy buen lugar, la piscina y tina definitivamente lo mejor. Tiene todo lo necesario para pasar unos días de relajo y descanso con familia y amigos."
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">H</div>
+                <div>
+                  <h4 class="font-bold text-white leading-tight">Hans</h4>
+                  <p class="text-xs text-gray-500">Calama, Chile • Octubre 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-black rounded-xl p-8 shadow-lg border border-surface-container-high flex flex-col justify-between">
+              <div>
+                <div class="flex text-secondary mb-4">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-body-md text-gray-300 italic mb-6">
+                  "El lugar es muy tranquilo, ideal para ir con amigos o familia a descansar y pasarlo bien, la casa es amplia el patio también... la atención también es 10/10. Recomiendo al 100%."
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">G</div>
+                <div>
+                  <h4 class="font-bold text-white leading-tight">Huésped en Grupo</h4>
+                  <p class="text-xs text-gray-500">Agosto 2025 • En grupo</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section class="w-full py-space-3xl bg-surface" id="ubicacion">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <div class="lg:col-span-7 overflow-hidden rounded-xl shadow-sm bg-surface-container-high h-96 flex items-center justify-center relative">
+              <iframe class="w-full h-full absolute inset-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106132.86469614486!2d-70.78318721475736!3d-33.80554190807755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966336e765502a1d%3A0xe7fbb64b54784a0a!2sPaine%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1714480749021!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-bold">Ubicación</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary">Reserva Ecológica Cora 2</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Parcela #30, El Majuelo, Paine. Disfruta de la tranquilidad de la Región Metropolitana, con patio y hermosas vistas a la ciudad y la naturaleza.
+              </p>
+              <div class="flex flex-col gap-space-sm pt-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">directions_car</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface"><strong>40 minutos</strong> desde Santiago</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">flight</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface">A 59 km del Aeropuerto Arturo Merino Benítez</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">local_parking</span>
+                  </div>
+                  <span class="font-body-md text-body-md text-on-surface">Estacionamiento gratuito en las instalaciones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Que hay cerca Section -->
+      <section class="w-full py-20 bg-black border-t border-surface-container-high">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+          <h2 class="font-display-md text-3xl md:text-4xl text-primary mb-12 text-center">¿Qué hay cerca?</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            
+            <!-- Atracciones -->
+            <div>
+              <div class="flex items-center gap-3 mb-6 text-white border-b border-white/10 pb-4">
+                <span class="material-symbols-outlined text-3xl text-primary">park</span>
+                <h3 class="font-display-md text-2xl">Atracciones</h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Plaza El Bosque</span>
+                  <span class="text-gray-500 text-sm font-mono">12 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Plaza San Vicente</span>
+                  <span class="text-gray-500 text-sm font-mono">13 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Buin Zoo</span>
+                  <span class="text-gray-500 text-sm font-mono">17 km</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Restaurantes -->
+            <div>
+              <div class="flex items-center gap-3 mb-6 text-white border-b border-white/10 pb-4">
+                <span class="material-symbols-outlined text-3xl text-primary">restaurant</span>
+                <h3 class="font-display-md text-2xl">Restaurantes</h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Restaurante Donde La Chepa</span>
+                  <span class="text-gray-500 text-sm font-mono">9 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Restaurante Doña Paula</span>
+                  <span class="text-gray-500 text-sm font-mono">11 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Café La Panadería Santa Rita</span>
+                  <span class="text-gray-500 text-sm font-mono">12 km</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Transporte -->
+            <div>
+              <div class="flex items-center gap-3 mb-6 text-white border-b border-white/10 pb-4">
+                <span class="material-symbols-outlined text-3xl text-primary">train</span>
+                <h3 class="font-display-md text-2xl">Transporte</h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Tren Buin</span>
+                  <span class="text-gray-500 text-sm font-mono">14 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300">
+                  <span>Tren Linderos</span>
+                  <span class="text-gray-500 text-sm font-mono">15 km</span>
+                </li>
+                <li class="flex justify-between items-center text-gray-300 mt-6 pt-6 border-t border-white/10">
+                  <span class="font-bold">Aeropuerto Arturo Merino Benítez</span>
+                  <span class="text-gray-500 text-sm font-mono">58 km</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Terms & Rules Section -->
+      <section class="w-full py-20 bg-surface border-t border-surface-container-high">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+          <h2 class="font-display-md text-3xl md:text-4xl text-primary mb-12 text-center">A tener en cuenta</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
+            
+            <div class="bg-black p-8 rounded-xl border border-surface-container-high">
+              <h3 class="font-bold text-xl text-white mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">schedule</span> Horarios</h3>
+              <ul class="space-y-3">
+                <li><span class="font-bold text-white">Entrada:</span> De las 15:00 a las 18:00 hrs. <br><span class="text-sm text-gray-500">Informa tu hora prevista de llegada.</span></li>
+                <li><span class="font-bold text-white">Salida:</span> De las 11:00 a las 12:00 hrs.</li>
+              </ul>
+            </div>
+
+            <div class="bg-black p-8 rounded-xl border border-surface-container-high">
+              <h3 class="font-bold text-xl text-white mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">pets</span> Mascotas</h3>
+              <p>¡Gratis! Se admiten bajo petición.</p>
+              <p class="text-sm text-gray-500 mt-2">Tenencia responsable: Deben llevar sus camas/casitas para dormir. Por cualquier daño ocasionado se cobrará un monto de la garantía.</p>
+            </div>
+
+            <div class="bg-black p-8 rounded-xl border border-surface-container-high">
+              <h3 class="font-bold text-xl text-white mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">payments</span> Pagos y Garantía</h3>
+              <ul class="space-y-3">
+                <li><span class="font-bold text-white">Medios de Pago:</span> Solo aceptamos efectivo o transferencia.</li>
+                <li><span class="font-bold text-white">Depósito por daños:</span> Se pedirá un depósito de $50.000 a la llegada en efectivo. Se te devolverá por completo al hacer el check-out una vez revisado el alojamiento.</li>
+              </ul>
+            </div>
+
+            <div class="bg-black p-8 rounded-xl border border-surface-container-high">
+              <h3 class="font-bold text-xl text-white mb-4 flex items-center gap-2"><span class="material-symbols-outlined text-primary">rule</span> Normas Adicionales</h3>
+              <ul class="space-y-3">
+                <li><span class="font-bold text-white">Edad mínima:</span> Edad mínima para el check-in es de 18 años.</li>
+                <li><span class="font-bold text-white">Niños:</span> Se pueden alojar niños de cualquier edad. En este alojamiento no hay cunas ni camas supletorias.</li>
+                <li><span class="font-bold text-white">Fumadores:</span> No se puede fumar en el interior de las instalaciones.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="w-full bg-black mt-space-4xl pt-space-3xl pb-space-2xl border-t border-surface-container-high">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl pb-space-2xl border-b border-white/10">
+        <div class="flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-display-md text-2xl text-primary uppercase tracking-widest">Refugio el Amparo</span>
+          </div>
+          <p class="font-body-md text-gray-400 max-w-sm">Tu refugio ideal cerca de Santiago, con piscina privada, tinaja caliente y todas las comodidades para familias y grupos de hasta 10 personas.</p>
+          <div class="flex items-center gap-4 mt-4">
+            <a href="https://www.instagram.com/refugio_el_amparo/" target="_blank" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-white hover:bg-primary hover:text-black transition-colors" title="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col md:items-end gap-space-sm">
+          <span class="font-display-md text-xl text-white uppercase tracking-wider">Contacto & Ubicación</span>
+          <div class="flex flex-col md:items-end gap-2 text-gray-400 mt-2">
+            <span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span> Reserva Ecológica Cora 2 Parcela #30, El Majuelo</span>
+            <span class="font-bold text-primary mt-4">Consultas directo por WhatsApp:</span>
+            <a href="https://wa.me/56968713280" target="_blank" class="text-white font-bold text-2xl hover:text-primary transition-colors">+56 9 6871 3280</a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 font-label-sm text-sm">
+        <p>© 2026 Refugio el Amparo de Paine. Todos los derechos reservados.</p>
+        <p>Diseñado para el descanso.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Forzar que la pagina cargue arriba de todo y no en el medio
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0,0);
+
+    // Cambiar header de transparente a solido al hacer scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('bg-black/90', 'backdrop-blur-xl', 'border-b', 'border-white/10');
+        header.classList.remove('bg-transparent', 'py-2');
+      } else {
+        header.classList.add('bg-transparent', 'py-2');
+        header.classList.remove('bg-black/90', 'backdrop-blur-xl', 'border-b', 'border-white/10');
+      }
+    });
+  </script>
+</body>
+</html>
